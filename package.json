@@ -4,7 +4,8 @@
   "description": "- Building a RESTful API.\r - Performing CRUD operations.\r - Writing API endpoints.",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,13 @@
   },
   "homepage": "https://github.com/jstewart8053/node-api1-project#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "knex": "^0.21.15",
+    "shortid": "^2.2.16",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.6"
   }
 }

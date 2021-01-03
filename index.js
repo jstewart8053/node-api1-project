@@ -1,5 +1,3 @@
-const express = require("express");
-
-const server = express();
-
-server.get("/api/users/id", (req, res) => {});
+require("dotenv").config();
+const server = require("./api/server.js");
+const port = process.env.PORT || 8000;
